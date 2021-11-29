@@ -38,6 +38,8 @@ namespace DashboardApi
 
             services.AddScoped<IService, ServiceClass>();
 
+            services.AddCors();
+
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -61,7 +63,7 @@ namespace DashboardApi
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseCors(options => options.WithOrigins().AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
