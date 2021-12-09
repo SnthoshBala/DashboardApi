@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DashboardApi.Migrations
 {
     [DbContext(typeof(AcceleratorContext))]
-    [Migration("20211129104520_m1")]
-    partial class m1
+    [Migration("20211209151422_newmigration")]
+    partial class newmigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -30,6 +30,9 @@ namespace DashboardApi.Migrations
                     b.Property<string>("accDescr")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("accDoc")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("accImg")
                         .HasColumnType("nvarchar(max)");
 
@@ -37,6 +40,9 @@ namespace DashboardApi.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("accUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("accVideo")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("accId");

@@ -2,7 +2,7 @@
 
 namespace DashboardApi.Migrations
 {
-    public partial class m1 : Migration
+    public partial class newmigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,11 +11,13 @@ namespace DashboardApi.Migrations
                 columns: table => new
                 {
                     accId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "100, 1"),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     accName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     accDescr = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     accUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    accImg = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    accImg = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    accDoc = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    accVideo = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

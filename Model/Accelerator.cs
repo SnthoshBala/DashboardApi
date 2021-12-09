@@ -11,18 +11,17 @@ namespace DashboardApi.Model
         [Key]
         public int accId { get; set; }
 
-
         public string accName { get; set; }
-
 
         public string accDescr { get; set; }
 
-
         public string accUrl { get; set; }
-
 
         public string accImg { get; set; }
 
+        public string accDoc { get; set; }
+
+        public string accVideo { get; set; }
 
     }
 

@@ -28,6 +28,9 @@ namespace DashboardApi.Migrations
                     b.Property<string>("accDescr")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("accDoc")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("accImg")
                         .HasColumnType("nvarchar(max)");
 
@@ -35,6 +38,9 @@ namespace DashboardApi.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("accUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("accVideo")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("accId");

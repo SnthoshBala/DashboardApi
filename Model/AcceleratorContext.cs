@@ -8,7 +8,7 @@ namespace DashboardApi.Model
 {
     public class AcceleratorContext : DbContext
     {
-        private const string connection = "Server=tcp:coeportal.database.windows.net,1433;Initial Catalog=Coeportal;Persist Security Info=False;User ID=coeportal;Password=Raguraman@007;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private const string connection = "Server=KANINI-LTP-487\\MSQLSERVERSB007;Database=coeportal;Trusted_Connection=True;";
 
         public AcceleratorContext()
         {
